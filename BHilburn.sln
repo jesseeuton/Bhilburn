@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BHilburn.Web", "BHillburn.Web\BHilburn.Web.csproj", "{57A4DEA0-23EF-4B84-8756-41163C6AE9EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BHilburn.Web.Tests", "BHillburn.Web.Tests\BHilburn.Web.Tests.csproj", "{B9574309-F0A9-4E2B-84D8-E17B1C27701D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57A4DEA0-23EF-4B84-8756-41163C6AE9EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57A4DEA0-23EF-4B84-8756-41163C6AE9EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57A4DEA0-23EF-4B84-8756-41163C6AE9EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57A4DEA0-23EF-4B84-8756-41163C6AE9EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9574309-F0A9-4E2B-84D8-E17B1C27701D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9574309-F0A9-4E2B-84D8-E17B1C27701D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9574309-F0A9-4E2B-84D8-E17B1C27701D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9574309-F0A9-4E2B-84D8-E17B1C27701D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

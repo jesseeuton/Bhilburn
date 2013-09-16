@@ -1,0 +1,58 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Map</title>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <style type="text/css">
+            html { height: 100% }
+            body { height: 100%; margin: 0; padding: 0 }
+            #map-canvas { height: 400px; width: 400px; }
+        </style>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQPM2QIoOqaRhEh-KqxvgFVd8prl1Jez0&sensor=false"></script>
+        <script type="text/javascript">
+            //https://developers.google.com/maps/documentation/javascript/tutorial
+            //https://developers.google.com/maps/documentation/javascript/geocoding
+
+            function initialize() {
+                goToLocation('1975 30th Street, Boulder CO, 80301');
+            }
+
+            function handleGeocodeRequestResponse(results, statuscode) {
+                
+                var latLong = results[0].geometry.location;
+
+                var mapOptions = {
+                    center: latLong,
+                    zoom: 14,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+            }
+
+            function goToLocation(address) {
+                var geocodeRequest = {
+                    address: address
+                }
+
+                var geocoder = new google.maps.Geocoder();
+                geocoder.geocode(geocodeRequest, handleGeocodeRequestResponse);
+            }
+
+            function search() {
+                var address = document.getElementById('searchtext').value;
+                goToLocation(address);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+    </head>
+    <body>
+        <div><input type="text" id="searchtext" /><input type="button" id="bSearch" value="Search" onclick="search();" /></div>
+        <div id="map-canvas"></div>
+    </body>
+</html>
