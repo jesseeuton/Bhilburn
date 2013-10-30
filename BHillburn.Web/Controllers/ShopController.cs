@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace goodsam.Controllers
+namespace BHilburn.Web.Controllers
 {
     public class ShopController : Controller
     {

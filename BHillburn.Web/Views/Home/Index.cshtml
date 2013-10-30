@@ -1,53 +1,79 @@
-﻿<div class="row">
-    <div class="large-12 columns">
-      <ul class="button-group">
-        <li><a href="#" class="button">Link 1</a></li>
-        <li><a href="#" class="button">Link 2</a></li>
-        <li><a href="#" class="button">Link 3</a></li>
-        <li><a href="#" class="button">Link 4</a></li>
-        <li><a href="#" class="button">Link 5</a></li>
-        <li><a href="#" class="button">Link 6</a></li>
-        <li><a href="#" class="button">Link 7</a></li>
+﻿  <div class="row">
+    <div class="large-6 columns" style="display:inline">
+      <img src="~/Images/home/bri_euton_logo_2.jpg" />
+      <!--<h2 style="font-family: Helvetica Neue; color: #8a8a8a">Bri Euton Image</h2><h6 style="font-family: Helvetica Neue; color: #8a8a8a">j. hilburn style advisor</h6>-->
+    </div>
+    <div class="large-6 columns" style="margin-top: 20px;">
+      <ul class="right button-group">
+         <li>
+             @Html.ActionLink("About", "Index", "What", null, new { @class = "button" })
+         </li>
+          <li>
+             @Html.ActionLink("Partners", "Index", "Why", null, new { @class = "button" })
+         </li>
+          <li>
+             @Html.ActionLink("Media", "Index", "Media", null, new { @class = "button" })
+         </li>
+          <li>
+             <a href="http://www.brieuton.jhilburn.com" class="button">Shop</a>
+         </li>
       </ul>
-      
-      <!-- Main Banner Image - place in a paragraph to enforce the modular scale spacing -->
-      <p><img src="http://placehold.it/1000x400&text=[banner img]" /></p>
+  </div>
+  </div>
+  
+<!-- End Header and Nav -->
+
+<!-- First Band (Slider) -->
+
+  <div class="row">
+    <div class="large-12 columns" style="margin-top: 1em">
+        <ul data-orbit="" >
+            <li>
+                <img src="http://placehold.it/400x300&text=[img]" />
+                <div class="orbit-caption">Caption 1</div>
+            </li>
+            <li>
+                <img src="http://placehold.it/400x300&text=[img]" />
+                <div class="orbit-caption">Caption 2</div>
+            </li>
+            <li>
+                <img src="http://placehold.it/400x300&text=[img]" />
+                <div class="orbit-caption">Caption 3</div>
+            </li>
+        </ul>
+    
+    <hr />
     </div>
   </div>
   
-  <!-- End Nav and Banner -->
-  
-  
-  <!-- Main Content Section -->
-  
-  <div class="row">
-  
-    <div class="large-8 columns">
-      <h4>This is a content section.</h4>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-      <p><a href="#" class="secondary small button">Next Page &rarr;</a></p>
+<!-- Three-up Content Blocks -->
+
+	<div class="row">
+
+    <div class="large-4 columns">
+      <div id="customfit" style="background-image: url('/Images/home/jh-why-photo-sprite-wide.png'); background-position-x: 0px; background-position-y: 0px; height: 155px; display: block;"></div>
+      <h4>Custom Fit.</h4>
+      <p>It doesn't matter what designer or fabric you choose, if your clothing fits well people will notice.</p>
+    </div>
+
+	  <div class="large-4 columns">
+      <div id="italianfabrics" style="background-image: url('/Images/home/jh-why-photo-sprite-wide.png'); background-position-x: 0px; background-position-y: -155.25px; height: 155px;"></div>
+      <h4>Italian Fabrics.</h4>
+      <p>J Hilburn suits, shirts and trousers are all crafted of fabrics from the finest mills in the world, and more often than not, this means Italy. Luxury starts with premium materials, so we insist on using only the best.</p>
     </div>
     
     <div class="large-4 columns">
-    
-      <!-- Gallery sidebar with a block grid. Note: block grid items should be the same size for optimal results -->
-      
-      <ul class="small-block-grid-3">
-        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-        <li><a href="#"><img src="http://placehold.it/120x120" /></a></li>
-      </ul>
+      <div id="exceptionalvalue" style="background-image: url('/Images/home/jh-why-photo-sprite-wide.png'); background-position-x: 0px; background-position-y: -465.75px; height: 155px; display: block;"></div>
+      <h4>Exceptional Value.</h4>
+      <p>Direct from the finest makers in the world, J Hilburn garments are delivered to you at a value that is impossible for traditional retailers to match.</p>
     </div>
-        
-  </div>
-  
-  
-  <!-- Call to Action Panel -->
-  <div class="row">
+	
+    </div>
+    
+<!-- Call to Action Panel -->
+<!-- put links to twitter, facebook, linkedin, etc here -->
+<!-- put links to Inc, Esquire, Mens Health, etc here -->
+@*<div class="row">
     <div class="large-12 columns">
     
       <div class="panel">
@@ -64,109 +90,4 @@
       </div>
       
     </div>
-  </div>
-  
-  
-  <!-- Footer -->
-  
-  <footer class="row">
-    <div class="large-12 columns">
-      <hr />
-      <div class="row">
-        <div class="large-6 columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
-        </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-            <li><a href="#">Link 5</a></li>
-            <li><a href="#">Link 6</a></li>
-            <li><a href="#">Link 7</a></li>
-          </ul>
-        </div>
-      </div>
-    </div> 
-  </footer>
-
-
-@*<div class="row">
-		<div class="large-12 columns">
-			<h2>Welcome to </h2>
-			<hr />
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="large-8 columns">
-			<h3>The Grid</h3>
-
-			<!-- Grid Example -->
-			<div class="row">
-				<div class="large-12 columns">
-					<div class="panel">
-						<p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-6 columns">
-					<div class="panel">
-						<p>Six columns</p>
-					</div>
-				</div>
-				<div class="large-6 columns">
-					<div class="panel">
-						<p>Six columns</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-			</div>
-
-			<h3>Buttons</h3>
-
-      <div class="row">
-        <div class="large-6 columns">
-          <p><a href="#" class="small button">Small Button</a></p>
-          <p><a href="#" class="button">Medium Button</a></p>
-          <p><a href="#" class="large button">Large Button</a></p>
-        </div>
-        <div class="large-6 columns">
-          <p><a href="#" class="small alert button">Small Alert Button</a></p>
-          <p><a href="#" class="success button">Medium Success Button</a></p>
-          <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
-        </div>
-      </div>
-		</div>
-
-		<div class="large-4 columns">
-			<h4>Getting Started</h4>
-			<p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-
-			<h4>Other Resources</h4>
-			<p>Once you've exhausted the fun in this document, you should check out:</p>
-			<ul class="disc">
-				<li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-				<li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-				<li><a href="http://twitter.com/foundationzurb">@@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
-			</ul>
-		</div>
-	</div>*@
+  </div>*@

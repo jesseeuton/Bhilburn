@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace goodsam
+namespace BHilburn.Web
 {
     public class BundleConfig
     {
@@ -20,6 +20,7 @@ namespace goodsam
             bundles.Add(new ScriptBundle("~/bundles/foundation").Include(
               "~/Scripts/foundation/foundation.js",
               "~/Scripts/foundation/foundation.*",
+              "~/Scripts/foundation/foundation.orbit.js",
               "~/Scripts/foundation/app.js"));
             #endregion
 

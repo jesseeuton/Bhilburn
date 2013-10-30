@@ -7,7 +7,7 @@ using System.Globalization;
 using System.Web.Mvc;
 using System.Web.Security;
 
-namespace goodsam.Models
+namespace BHilburn.Web.Models
 {
     public class UsersContext : DbContext
     {

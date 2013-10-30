@@ -10,7 +10,7 @@
     @*Set the viewport width to device width for mobile *@
     <meta name="viewport" content="width=device-width" />
 
-    <title>@ViewBag.Title - Welcome to Foundation</title>
+    <title>Bri Euton</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     @Styles.Render("~/Content/foundation/css")
@@ -20,6 +20,27 @@
 </head>
 <body>
     @RenderBody()
+
+      <!-- Footer -->
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <!--<p>&copy; Copyright no one at all. Go to town.</p>-->
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li style="height: 25px; width: 25px; background-image: url('/images/common/jh-social-sprite-v2.png'); background-position-x: 0; background-position-y: 0px;"><a href="#"></a></li>
+            <li style="height: 25px; width: 25px; background-image: url('/images/common/jh-social-sprite-v2.png'); background-position-x: 0; background-position-y: -25px;"><a href="#"></a></li>
+            <li style="height: 25px; width: 25px; background-image: url('/images/common/jh-social-sprite-v2.png'); background-position-x: 0; background-position-y: -50px;"><a href="#"></a></li>
+            <li style="height: 25px; width: 25px; background-image: url('/images/common/jh-social-sprite-v2.png'); background-position-x: 0; background-position-y: -75px;"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
     @* Zepto polyfill: If you need to support Internet Explorer, you can fall back on jQuery. http://zeptojs.com/ *@
     <script>
         document.write('<script src=' +

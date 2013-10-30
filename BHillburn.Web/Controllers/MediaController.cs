@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace BHilburn.Web.Controllers
 {
-    public class WhatController : Controller
+    public class MediaController : Controller
     {
         //
-        // GET: /What/
+        // GET: /How/
 
         public ActionResult Index()
         {

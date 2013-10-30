@@ -358,13 +358,13 @@
 
     settings: {
       animation: 'slide',
-      timer_speed: 10000,
-      pause_on_hover: true,
-      resume_on_mouseout: false,
+      timer_speed: 5000,
+      pause_on_hover: false,
+      resume_on_mouseout: true,
       animation_speed: 500,
       stack_on_small: false,
-      navigation_arrows: true,
-      slide_number: true,
+      navigation_arrows: false,
+      slide_number: false,
       container_class: 'orbit-container',
       stack_on_small_class: 'orbit-stack-on-small',
       next_class: 'orbit-next',
