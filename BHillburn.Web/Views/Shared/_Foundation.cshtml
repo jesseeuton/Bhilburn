@@ -19,27 +19,51 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @RenderBody()
-
-      <!-- Footer -->
-  <footer class="row">
-    <div class="large-12 columns">
-      <hr />
-      <div class="row">
-        <div class="large-6 columns">
-          <!--<p>&copy; Copyright no one at all. Go to town.</p>-->
+    <!-- navigation -->
+    <div class="row">
+        <div class="large-6 columns" style="display:inline">
+          <img src="~/Images/common/logo_draft_1.png" />
+          <!--<h2 style="font-family: Helvetica Neue; color: #8a8a8a">Bri Euton Image</h2><h6 style="font-family: Helvetica Neue; color: #8a8a8a">j. hilburn style advisor</h6>-->
         </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li style="height: 25px; width: 25px; background-image: url('/images/common/jh-social-sprite-v2.png'); background-position-x: 0; background-position-y: 0px;"><a href="#"></a></li>
-            <li style="height: 25px; width: 25px; background-image: url('/images/common/jh-social-sprite-v2.png'); background-position-x: 0; background-position-y: -25px;"><a href="#"></a></li>
-            <li style="height: 25px; width: 25px; background-image: url('/images/common/jh-social-sprite-v2.png'); background-position-x: 0; background-position-y: -50px;"><a href="#"></a></li>
-            <li style="height: 25px; width: 25px; background-image: url('/images/common/jh-social-sprite-v2.png'); background-position-x: 0; background-position-y: -75px;"><a href="#"></a></li>
+        <div class="large-6 columns" style="height: 83px">
+          <ul class="inline-list right" style="padding: 2.5em 0em 1em 1em">
+              <li id="facebook" style="background-image: url('/images/common/social_sprite_v5.png'); background-position-x: 0px; background-position-y: 0px; width: 32px; height: 32px; margin-left: .5em"></li>
+              <li id="linkedin" style="background-image: url('/images/common/social_sprite_v5.png'); background-position-x: 0px; background-position-y: -57px; width: 32px; height: 32px; margin-left: .5em"></li>
+              <li id="twitter" style="background-image: url('/images/common/social_sprite_v5.png'); background-position-x: 0px; background-position-y: -114px; width: 32px; height: 32px; margin-left: .5em"></li>
           </ul>
         </div>
-      </div>
     </div>
-  </footer>
+    <div class="row">
+        <nav class="top-bar" style="padding-left: 1.95em; margin-bottom: 0;">
+            <ul class="inline-list left columns" style="padding-top: 4px; padding-left: 0.9375em; padding-right: 0.9375em; font-style: normal; font-size: small; color: white">
+              <!-- Title Area -->
+                <li class="name" style="margin-right: 2em">
+                  <a class="menuAnchor" href="#">
+                    About Me
+                  </a>
+                </li>
+                <li class="name" style="margin-right: 2em">
+                  <a class="menuAnchor" href="#">
+                    Why J. Hilburn
+                  </a>
+                </li>
+                <li class="name" style="margin-right: 2em">
+                  <a class="menuAnchor" href="#">
+                    Partner
+                  </a>
+                </li>
+                <li class="name" style="margin-right: 2em">
+                    <a class="menuAnchor" href="#">
+                        Clients
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+        
+
+    <!-- end navigation -->
+    @RenderBody()
 
     @* Zepto polyfill: If you need to support Internet Explorer, you can fall back on jQuery. http://zeptojs.com/ *@
     <script>
@@ -51,8 +75,35 @@
     @Scripts.Render("~/bundles/foundation")
     <script>
         $(document).foundation();
+
+        $(document).ready(function () {
+            $('#facebook').click(function() {
+                window.open('https://www.facebook.com/JHilburnBoulderCo');
+            });
+
+            $('#linkedin').click(function() {
+                window.open('http://www.linkedin.com/pub/bri-euton/10/3a8/517');
+            });
+
+            $('#twitter').click(function () {
+                window.open('https://twitter.com/JHilburnBoulder');
+            });
+        });
     </script>
     @*Use the Scripts section to define page specific scripts*@
     @RenderSection("scripts", required: false)
+
+     <!-- Footer -->
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <!--<p>&copy; Copyright no one at all. Go to town.</p>-->
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

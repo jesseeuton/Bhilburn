@@ -287,7 +287,7 @@
       left = (left === -1) ? duration : left;
       el.removeClass(settings.timer_paused_class);
       start = new Date().getTime();
-      progress.animate({'width': '100%'}, left, 'linear');
+      //progress.animate({'width': '100%'}, left, 'linear');
       timeout = setTimeout(function() {
         self.restart();
         callback();

@@ -1,0 +1,32 @@
+﻿
+    <!-- old nav -->
+    <!----------------------------------------------------------------------------->
+    <div class="row">
+    <div class="large-6 columns" style="display:inline">
+      <img src="~/Images/home/bri_euton_logo_2.jpg" />
+      <!--<h2 style="font-family: Helvetica Neue; color: #8a8a8a">Bri Euton Image</h2><h6 style="font-family: Helvetica Neue; color: #8a8a8a">j. hilburn style advisor</h6>-->
+    </div>
+    <div class="large-6 columns" style="margin-top: 20px;">
+      <ul class="right button-group">
+         <li>
+             @*@Html.ActionLink("About", "Index", "What", null, new { @class = "button" })*@
+             <a href="#" class="button">About Me</a>
+         </li>
+          <li>
+             @*@Html.ActionLink("Partners", "Index", "Why", null, new { @class = "button" })*@
+              <a href="#" class="button">Why J. Hilburn</a>
+         </li>
+          <li>
+             @*@Html.ActionLink("Media", "Index", "Media", null, new { @class = "button" })*@
+              <a href="#" class="button">Clients</a>
+         </li>
+          <li>
+             @*@Html.ActionLink("Media", "Index", "Media", null, new { @class = "button" })*@
+              <a href="#" class="button">Partner</a>
+         </li>
+          <li>
+             <a href="http://www.brieuton.jhilburn.com" class="button">Shop</a>
+         </li>
+      </ul>
+  </div>
+   </div>

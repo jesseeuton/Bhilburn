@@ -1042,7 +1042,7 @@ a {
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #575757; }
+    color: #ae9248; }
   a img {
     border: none; }
 
@@ -2809,7 +2809,7 @@ label.error {
 
 .top-bar {
   overflow: hidden;
-  height: 45px;
+  height: 30px;
   line-height: 45px;
   position: relative;
   background: #111111;
@@ -2832,11 +2832,11 @@ label.error {
     position: relative;
     margin: 0; }
   .top-bar .name {
-    height: 45px;
+    height: 25px;
     margin: 0;
-    font-size: 16; }
+    font-size: 12 }
     .top-bar .name h1 {
-      line-height: 45px;
+      line-height: 25px;
       font-size: 1.0625em;
       margin: 0; }
       .top-bar .name h1 a {
@@ -2857,8 +2857,8 @@ label.error {
       position: relative;
       display: block;
       padding: 0 15px;
-      height: 45px;
-      line-height: 45px; }
+      height: 25px;
+      line-height: 25px; }
     .top-bar .toggle-topbar.menu-icon {
       right: 15px;
       top: 50%;
@@ -4676,3 +4676,23 @@ a.th {
     max-width: 500px; }
   .f-dropdown.large {
     max-width: 800px; }
+
+    .menuAnchor {
+    color: white;
+}
+
+  .menuAnchor:hover {
+        color: #ae9248; 
+    }
+
+#facebook:hover {
+    cursor: pointer;
+}
+
+#linkedin:hover {
+    cursor: pointer;
+}
+
+#twitter:hover {
+    cursor: pointer;
+}
