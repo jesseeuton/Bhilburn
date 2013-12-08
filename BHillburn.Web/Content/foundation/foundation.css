@@ -14,7 +14,7 @@ body {
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -4683,6 +4683,7 @@ a.th {
 
   .menuAnchor:hover {
         color: #ae9248; 
+        text-decoration: underline;
     }
 
 #facebook:hover {
@@ -4696,3 +4697,91 @@ a.th {
 #twitter:hover {
     cursor: pointer;
 }
+.jh-press a em {
+	position:absolute;
+	text-indent:-99999px;
+}
+.press-content a {
+	float:right;
+	height:32px;
+	position:relative;
+	opacity:0.7;
+	-moz-opacity: 0.70;
+	filter: alpha(opacity=70);
+	margin:10px 0px 10px 50px;
+	background:transparent url('../../images/common/press-logos.png') no-repeat;
+	background-position:-999px -999px;
+}
+.press-content a:hover {
+	opacity:1.0;
+	-moz-opacity: 1.0;
+	filter: alpha(opacity=100);
+}
+a#jh-press-mh {
+	width:75px;
+	background-position:0px 0px;
+}
+a#jh-press-usa-today {
+	width:50px;
+	background-position:-105px 0px;
+}
+a#jh-press-ny-times {
+	width:104px;
+	background-position:-169px 0px;
+}
+a#jh-press-esquire {
+	width:83px;
+	background-position:-335px 0px;
+}
+a#jh-press-nbc {
+	width:29px;
+	background-position:-290px 0px;
+}
+a#jh-press-inc {
+	width:44px;
+	background-position:-433px 0px;
+}
+
+
+.social {
+    background-image: url('../../images/common/social_40x40.png'); 
+    width: 32px; 
+    height: 32px; 
+}
+
+.social:hover {
+    cursor: pointer;
+}
+
+
+.social.facebook {
+    background-position-x: 0px;
+    background-position-y: 0px;    
+}
+
+.social.facebook:hover {
+    background-position-x: 0px;
+    background-position-y: -40px;    
+}
+
+.social.twitter {
+    background-position-x: -40px;
+    background-position-y: 0px;    
+}
+
+.social.twitter:hover {
+    background-position-x: -40px;
+    background-position-y: -40px;    
+}
+
+.social.linkedin {
+    background-position-x: -120px;
+    background-position-y: 0px;    
+}
+
+.social.linkedin:hover {
+    background-position-x: -120px;
+    background-position-y: -40px;    
+}
+
+

@@ -158,8 +158,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\HowController.cs" />
+    <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MediaController.cs" />
+    <Compile Include="Controllers\PartnerController.cs" />
     <Compile Include="Controllers\ShopController.cs" />
     <Compile Include="Controllers\WhatController.cs" />
     <Compile Include="Controllers\WhyController.cs" />
@@ -237,13 +242,18 @@
     <None Include="Properties\PublishProfiles\brieuton - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\brieuton.com - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Images\About\bri-euton.jpg" />
     <Content Include="Images\common\black-white-icon-full-cropped.jpg" />
     <Content Include="Images\common\facebook.png" />
+    <Content Include="Images\common\favicon.ico" />
     <Content Include="Images\common\jh-social-sprite-v2.png" />
     <Content Include="Images\common\jh-social-sprite-v3.png" />
     <Content Include="Images\common\linkedin.png" />
     <Content Include="Images\common\logo_draft_1.png" />
+    <Content Include="Images\common\press-logos.png" />
+    <Content Include="Images\common\social_40x40.png" />
     <Content Include="Images\common\social_sprite_v5.png" />
+    <Content Include="Images\common\titleicon.png" />
     <Content Include="Images\common\twitter.png" />
     <Content Include="Images\home\BriEutonLogo.png" />
     <Content Include="Images\fall3_small.jpg" />
@@ -259,6 +269,18 @@
     <Content Include="Images\home\bri_euton_logo.jpg" />
     <Content Include="Images\home\bri_euton_logo_2.jpg" />
     <Content Include="Images\home\esquire_best_new_dress_shirt.jpg" />
+    <Content Include="Images\home\frontpage1.jpg" />
+    <Content Include="Images\home\frontpage1_large.jpg" />
+    <Content Include="Images\home\frontpage2.jpg" />
+    <Content Include="Images\home\frontpage2_large.jpg" />
+    <Content Include="Images\home\frontpage3.jpg" />
+    <Content Include="Images\home\frontpage4.jpg" />
+    <Content Include="Images\home\frontpage4_large.jpg" />
+    <Content Include="Images\home\frontpage5.jpg" />
+    <Content Include="Images\home\frontpage5_large.jpg" />
+    <Content Include="Images\home\frontpage6.jpg" />
+    <Content Include="Images\home\frontpage6_large.jpg" />
+    <Content Include="Images\home\home_model_sprite.png" />
     <Content Include="Images\home\jh-why-photo-sprite-wide.png" />
     <Content Include="Images\home\jh-why-photo-sprite.png" />
     <Content Include="Scripts\foundation\foundation.abide.js" />
@@ -333,8 +355,11 @@
     <Content Include="Views\Shared\_Foundation.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Why\Index.cshtml" />
-    <Content Include="Views\Clients\Index.cshtml" />
     <Content Include="Views\Partner\Index.cshtml" />
+    <Content Include="Views\Services\Index.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\How\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -10,8 +10,10 @@
     @*Set the viewport width to device width for mobile *@
     <meta name="viewport" content="width=device-width" />
 
-    <title>Bri Euton</title>
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title>Bri Euton | J. Hilburn Style Advisor</title>
+    <link rel="shortcut icon" href="~/Images/common/favicon.ico" type="image/x-icon" />
+
+    <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 
     @Styles.Render("~/Content/foundation/css")
 
@@ -22,14 +24,19 @@
     <!-- navigation -->
     <div class="row">
         <div class="large-6 columns" style="display:inline">
-          <img src="~/Images/common/logo_draft_1.png" />
+            <a href="~/Home">
+                <img src="~/Images/common/logo_draft_2.png" />
+            </a>
           <!--<h2 style="font-family: Helvetica Neue; color: #8a8a8a">Bri Euton Image</h2><h6 style="font-family: Helvetica Neue; color: #8a8a8a">j. hilburn style advisor</h6>-->
         </div>
         <div class="large-6 columns" style="height: 83px">
           <ul class="inline-list right" style="padding: 2.5em 0em 1em 1em">
-              <li id="facebook" style="background-image: url('/images/common/social_sprite_v5.png'); background-position-x: 0px; background-position-y: 0px; width: 32px; height: 32px; margin-left: .5em"></li>
+              @*<li id="facebook" style=" background-image: url('/images/common/social_sprite_v5.png'); background-position-x: 0px; background-position-y: 0px; width: 32px; height: 32px; margin-left: .5em"></li>
               <li id="linkedin" style="background-image: url('/images/common/social_sprite_v5.png'); background-position-x: 0px; background-position-y: -57px; width: 32px; height: 32px; margin-left: .5em"></li>
-              <li id="twitter" style="background-image: url('/images/common/social_sprite_v5.png'); background-position-x: 0px; background-position-y: -114px; width: 32px; height: 32px; margin-left: .5em"></li>
+              <li id="twitter" style="background-image: url('/images/common/social_sprite_v5.png'); background-position-x: 0px; background-position-y: -113px; width: 32px; height: 32px; margin-left: .5em"></li>*@
+              <li class="social facebook" id="facebook"></li>
+              <li class="social twitter" id="twitter"></li>
+              <li class="social linkedin" id="linkedin"></li>              
           </ul>
         </div>
     </div>
@@ -38,24 +45,19 @@
             <ul class="inline-list left columns" style="padding-top: 4px; padding-left: 0.9375em; padding-right: 0.9375em; font-style: normal; font-size: small; color: white">
               <!-- Title Area -->
                 <li class="name" style="margin-right: 2em">
-                  <a class="menuAnchor" href="#">
-                    About Me
-                  </a>
+                    @Html.ActionLink("Home", "Index", "Home", null, new { @class="menuAnchor" }) 
                 </li>
                 <li class="name" style="margin-right: 2em">
-                  <a class="menuAnchor" href="#">
-                    Why J. Hilburn
-                  </a>
+                    @Html.ActionLink("Why J. Hilburn", "Index", "Why", null, new { @class="menuAnchor" }) 
                 </li>
                 <li class="name" style="margin-right: 2em">
-                  <a class="menuAnchor" href="#">
-                    Partner
-                  </a>
+                    @Html.ActionLink("How It Works", "Index", "How", null, new { @class="menuAnchor"})
                 </li>
                 <li class="name" style="margin-right: 2em">
-                    <a class="menuAnchor" href="#">
-                        Clients
-                    </a>
+                    @Html.ActionLink("About Bri", "Index", "About", null, new { @class="menuAnchor"})
+                </li>
+                <li class="name" style="margin-right: 2em">
+                    @Html.ActionLink("Contact Bri", "Index", "Contact", null, new { @class="menuAnchor"})
                 </li>
             </ul>
         </nav>
@@ -63,7 +65,9 @@
         
 
     <!-- end navigation -->
-    @RenderBody()
+    <div style="min-height: 600px;">
+        @RenderBody()
+    </div>
 
     @* Zepto polyfill: If you need to support Internet Explorer, you can fall back on jQuery. http://zeptojs.com/ *@
     <script>
@@ -97,13 +101,24 @@
   <footer class="row">
     <div class="large-12 columns">
       <hr />
-      <div class="row">
-        <div class="large-6 columns">
-          <!--<p>&copy; Copyright no one at all. Go to town.</p>-->
-        </div>
+      <div class="row" style="background-color: gray">
+            <div class="large-3 columns" style="align-content: center; float: left">
+              <p style="color: white; opacity:0.7; -moz-opacity: 0.70; filter: alpha(opacity=70);">&copy; 2013 Bri Euton.</p>
+            </div>
+          <!--<div class="large-3 columns" style="float: right;"></div>-->
+          <div class="large-9 columns">
+              <div class="press-content">
+                  <a id="jh-press-nbc" href="http://today.msnbc.msn.com/id/26184891/#41458552" target="_blank"></a>
+                  <a id="jh-press-esquire" href="http://www.esquire.com/style/best-deals-spring-clothes-men-022112" target="_blank"></a>
+                  <a id="jh-press-ny-times" href="http://www.nytimes.com/2011/11/03/business/smallbusiness/j-hilburn-wants-to-sell-online-case-study.html?_r=1" target="_blank"></a>
+                  <a id="jh-press-usa-today" href="http://www.usatoday.com/money/industries/retail/2010-12-07-customgifts07_ST_N.htm" target="_blank"></a>
+                  <a id="jh-press-mh" href="http://www.menshealth.com/video/custom-clothing-made-easy#/video/all/created/d/1" target="_blank"></a>
+              </div>
+          </div>
       </div>
     </div>
   </footer>
+
 
 </body>
 </html>
