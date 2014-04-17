@@ -1,24 +1,68 @@
-﻿<br /><br />
-<div class="row">
+﻿@model BHilburn.Web.Models.Contact.ContactViewModel
+
+<br /><br />
+<form id="target" action="/Contact">
+    <div class="row">
         <div class="large-12 columns">
-            <p>Schedule a fitting, ask a question or two, or see if you have what it takes to be a part of the company that is changing the face of retail fashion.</p>
+            <p style="font-size: 1em;">Schedule a fitting, ask a question or two, or learn more about being a part of the company that is changing the retail fashion landscape.</p>
         </div>
-</div>
-<div class="row">
-    <div class="large-3 columns">
-        <label>Name:</label>
-        <input id="Name" type="text" />
     </div>
-</div>
-<div class="row">
-    <div class="large-3 columns">
-        <label>Phone Number:</label>
-        <input id="phone" type="text" />
+    <br/>
+    <div class="row">
+        <div class="large-3 columns">
+            @Html.LabelFor(m => m.Name, new {@style="font-weight: bold;"})
+            @Html.TextBoxFor(m => m.Name, string.Empty, new { id="name"}); 
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="large-3 columns">
-        <label>Email:</label>
-        <input id="email" type="text" />
+    <div class="row">
+        <div class="large-3 columns">
+            @Html.LabelFor(m => m.Email, new {@style="font-weight: bold;"})
+            @Html.TextBoxFor(m=> m.Email)
+        </div>
     </div>
-</div>
+    <div class="row">
+        <div class="large-3 columns">
+            @Html.LabelFor(m => m.Phone, new {@style="font-weight: bold;"})
+            @Html.TextBoxFor(m=> m.Phone)
+        </div>
+    </div>
+    <div class="row" style="height: 250px;">
+        <div class="large-6 columns">
+            @Html.LabelFor(m => m.Info, new {@style="font-weight: bold;"})
+            @Html.TextAreaFor(m => m.Info, new { @style="min-height: 200px;"})
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-3 columns">
+            <input class="button" type="submit" value="Submit" data-reveal-id="confirmation"/>
+        </div>
+    </div>
+    <div class="row">
+        <div id="confirmation" class="reveal-modal" style="width: 400px; margin-left: auto; left: 40%;">
+            <div style="text-align: center;">
+                Thanks for the reaching out.  I will reach out to you in the next few days to schedule our first consultation.
+            </div>
+            <br/>
+            <br/>
+            <div>
+                <input type="button" class="button close-reveal-modal" style="font-size: 1em; color: #FFFFFF; position: relative; top: 0; right: 0; left: 30%" value="Got It"/>
+            </div>
+        </div>
+    </div>
+    </form>
+    
+    @section scripts
+    {
+        <script type="text/javascript">
+            
+            $(document).ready(function () {
+                
+                //when the popup confirmation form is closed, submit.
+                $('#confirmation').bind('close', function () {
+                });
+
+            });
+        </script>
+
+    }
+
