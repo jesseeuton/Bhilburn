@@ -1,7 +1,8 @@
 ﻿@model BHilburn.Web.Models.Contact.ContactViewModel
 
+@using (Html.BeginForm("EmailBri", "Contact", FormMethod.Post, new { submittedContactViewModel = Model }))
+{
 <br /><br />
-<form id="target" action="/Contact">
     <div class="row">
         <div class="large-12 columns">
             <p style="font-size: 1em;">Schedule a fitting, ask a question or two, or learn more about being a part of the company that is changing the retail fashion landscape.</p>
@@ -11,7 +12,7 @@
     <div class="row">
         <div class="large-3 columns">
             @Html.LabelFor(m => m.Name, new {@style="font-weight: bold;"})
-            @Html.TextBoxFor(m => m.Name, string.Empty, new { id="name"}); 
+            @Html.TextBoxFor(m => m.Name, string.Empty, new { id="name"})
         </div>
     </div>
     <div class="row">
@@ -34,23 +35,22 @@
     </div>
     <div class="row">
         <div class="large-3 columns">
-            <input class="button" type="submit" value="Submit" data-reveal-id="confirmation"/>
+            <input class="button" type="submit" value="ok" data-reveal-id="confirmation"/>
         </div>
     </div>
     <div class="row">
         <div id="confirmation" class="reveal-modal" style="width: 400px; margin-left: auto; left: 40%;">
             <div style="text-align: center;">
-                Thanks for the reaching out.  I will reach out to you in the next few days to schedule our first consultation.
+                Thanks for the reaching out.  I will contact you in the next few days to schedule our first consult.
             </div>
             <br/>
             <br/>
             <div>
-                <input type="button" class="button close-reveal-modal" style="font-size: 1em; color: #FFFFFF; position: relative; top: 0; right: 0; left: 30%" value="Got It"/>
+                <input type="submit" class="button close-reveal-modal" style="font-size: 1em; color: #FFFFFF; position: relative; top: 0; right: 0; left: 30%" value="Got It"/>
             </div>
         </div>
-    </div>
-    </form>
-    
+    </div> 
+}
     @section scripts
     {
         <script type="text/javascript">
@@ -59,6 +59,7 @@
                 
                 //when the popup confirmation form is closed, submit.
                 $('#confirmation').bind('close', function () {
+                    $('form').submit();
                 });
 
             });

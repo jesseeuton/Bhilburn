@@ -241,7 +241,6 @@
     <Content Include="Global.asax" />
     <None Include="Properties\PublishProfiles\brieuton - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\brieuton - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\brieuton.com - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Images\About\bri-euton.jpg" />
     <Content Include="Images\common\black-white-icon-full-cropped.jpg" />
@@ -250,7 +249,7 @@
     <Content Include="Images\common\jh-social-sprite-v2.png" />
     <Content Include="Images\common\jh-social-sprite-v3.png" />
     <Content Include="Images\common\linkedin.png" />
-    <Content Include="Images\common\logo_draft_1.png" />
+    <Content Include="Images\common\logo_draft_2.png" />
     <Content Include="Images\common\press-logos.png" />
     <Content Include="Images\common\social_40x40.png" />
     <Content Include="Images\common\social_sprite_v5.png" />
